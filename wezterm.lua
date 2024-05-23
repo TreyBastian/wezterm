@@ -29,7 +29,7 @@ config.font = wezterm.font 'GoMono Nerd Font'
 config.font_size = 13
 
 -- if windows start in WSL by default
-if wezterm.target_tripple == 'x86_64-pc-windows-msvc' then
+if wezterm.target_triple == 'x86_64-pc-windows-msvc' then
   config.wsl_domains = { { name = 'WSL:Ubuntu', distribution = 'Ubuntu', } }
   config.default_domain = 'WSL:Ubuntu'
 end
