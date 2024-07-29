@@ -3,14 +3,14 @@ local wezterm = require 'wezterm'
 -- color schemes for light and dark mode
 local function color_scheme_for_appearance(appearance)
   if appearance:find("Dark") then
-    return "Gruvbox Material (Gogh)"
+    return "zenbones_dark"
   else
-    return "Gruvbox (Gogh)"
+    return "zenbones"
   end
 end
 
 -- auto swap to light or dark scheme based on OS
-wezterm.on("window-config-reloaded", function(window, pane)
+wezterm.on("window-config-reloaded", function(window)
   local overrides = window:get_config_overrides() or {}
   local appearance = window:get_appearance()
   local color_scheme = color_scheme_for_appearance(appearance)
