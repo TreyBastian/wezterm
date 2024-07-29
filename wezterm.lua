@@ -3,9 +3,9 @@ local wezterm = require 'wezterm'
 -- color schemes for light and dark mode
 local function color_scheme_for_appearance(appearance)
   if appearance:find("Dark") then
-    return "zenbones_dark"
+    return "Gruvbox Dark (Gogh)"
   else
-    return "zenbones"
+    return "Gruvbox (Gogh)"
   end
 end
 
